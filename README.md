@@ -37,5 +37,5 @@ npm run dev
 
 ## 📬 Contact
 
-* Email: [tonemail@gmail.com](mailto:alaeddineboubaker@gmail.com)
+* Email: [alaeddineboubaker@gmail.com](mailto:alaeddineboubaker@gmail.com)
 * GitHub: https://github.com/aladinbk
