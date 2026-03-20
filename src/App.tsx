@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform, useSpring, useMotionValue, useMotionTe
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Float, MeshDistortMaterial, Sphere, PerspectiveCamera, Stars, Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
-import { Github, Mail, Linkedin, ArrowRight, Code2, Rocket, Zap, Users, CheckCircle2, Globe, Laptop, Smartphone, Database, Terminal, Layers, Cpu, Layout, ExternalLink, Menu, X, Play, Clock, Sparkles, Command, MousePointer2, BrainCircuit } from "lucide-react";
+import { Github, Mail, Linkedin, ArrowRight, Code2, Rocket, Zap, Users, CheckCircle2, Globe, Laptop, Smartphone, Database, Terminal, Layers, Cpu, Layout, ExternalLink, Menu, X, Play, Clock, Sparkles, Command, MousePointer2, BrainCircuit, MessageCircle } from "lucide-react";
 
 // --- Types ---
 interface Project {
@@ -168,11 +168,11 @@ function TextReveal({ text, className = "" }: { text: string; className?: string
   );
 }
 
-function BentoCard({ children, className = "", spotlight = true }: { children: React.ReactNode; className?: string; spotlight?: boolean }) {
+function BentoCard({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   const divRef = useRef<HTMLDivElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!divRef.current || !spotlight) return;
+    if (!divRef.current) return;
     const { left, top } = divRef.current.getBoundingClientRect();
     divRef.current.style.setProperty("--mouse-x", `${e.clientX - left}px`);
     divRef.current.style.setProperty("--mouse-y", `${e.clientY - top}px`);
@@ -184,7 +184,7 @@ function BentoCard({ children, className = "", spotlight = true }: { children: R
       onMouseMove={handleMouseMove}
       className={`glass-card relative overflow-hidden group ${className}`}
     >
-      {spotlight && <div className="spotlight" />}
+      <div className="spotlight" />
       <div className="relative z-10 h-full">
         {children}
       </div>
@@ -738,18 +738,20 @@ export default function App() {
               </a>
             </Magnetic>
             
-            <div className="flex gap-10">
+            <div className="flex flex-wrap justify-center gap-6 md:gap-10">
               {[
-                { Icon: Linkedin, href: "https://linkedin.com/in/alaeddine-boubaker" },
-                { Icon: Github, href: "https://github.com/aladinbk" },
-                { Icon: Mail, href: "mailto:alaeddineboubaker@gmail.com" }
+                { Icon: Linkedin, href: "https://linkedin.com/in/alaeddine-boubaker", label: "LinkedIn" },
+                { Icon: Github, href: "https://github.com/aladinbk", label: "GitHub" },
+                { Icon: MessageCircle, href: "https://wa.me/21658612156", label: "WhatsApp", color: "hover:text-emerald-400" },
+                { Icon: Mail, href: "mailto:alaeddineboubaker@gmail.com", label: "Email" }
               ].map((item, i) => (
                 <Magnetic key={i} strength={0.4}>
                   <a 
                     href={item.href} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="p-6 glass-card rounded-3xl hover:bg-white/5 hover:scale-110 transition-all text-slate-400 hover:text-white border-white/5"
+                    className={`p-6 glass-card rounded-3xl hover:bg-white/5 hover:scale-110 transition-all text-slate-400 border-white/5 ${item.color || 'hover:text-white'}`}
+                    title={item.label}
                   >
                     <item.Icon className="w-6 h-6" />
                   </a>
@@ -765,7 +767,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center font-display font-black text-black">
-              A
+              {/* Logo vide comme demandé */}
             </div>
             <div className="flex flex-col">
               <span className="font-display font-bold text-lg tracking-tight">ALAEDDINE</span>
@@ -776,6 +778,7 @@ export default function App() {
           <div className="flex gap-12 text-[9px] font-black uppercase tracking-[0.3em] text-slate-500">
             <Magnetic><a href="https://linkedin.com/in/alaeddine-boubaker" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a></Magnetic>
             <Magnetic><a href="https://github.com/aladinbk" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a></Magnetic>
+            <Magnetic><a href="https://wa.me/21658612156" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp</a></Magnetic>
             <Magnetic><a href="mailto:alaeddineboubaker@gmail.com" className="hover:text-white transition-colors">Email</a></Magnetic>
           </div>
 
