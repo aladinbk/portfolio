@@ -249,7 +249,7 @@ const PROJECTS: Project[] = [
     title: "Brew & Chill",
     category: "E-Commerce / Web App",
     description: "A modern coffee shop experience featuring a sleek UI, smooth animations, and a focus on user engagement.",
-    tags: ["React", "Vite", "Tailwind"],
+    tags: ["React", "Vite", "Tailwind CSS"],
     image: "/screenshots/brew_chill.PNG",
     demo: "https://brew-chill-coffee.netlify.app/",
     github: "https://github.com/aladinbk/Brew-Chill-Coffee"
@@ -266,11 +266,13 @@ const PROJECTS: Project[] = [
   },
   {
     id: "04",
-    title: "Omni-Commerce",
-    category: "E-Commerce",
-    description: "Global headless commerce platform processing millions of transactions with sub-second latency.",
-    tags: ["Next.js", "Node.js", "Redis"],
-    image: "https://picsum.photos/seed/omni/1200/800",
+    title: "Salonify",
+    category: "Web Application | AI | Booking System",
+    description: "A smart booking platform for hair salons that allows clients to reserve services easily via WhatsApp, enhanced with an AI assistant to guide users and increase conversions.",
+    tags: ["React", "Vite", "Tailwind CSS", "WhatsApp API"],
+    image: "/screenshots/salonify.PNG",
+    demo: "https://salonify-manouba.netlify.app/",
+    github: "https://github.com/aladinbk/salonify-manouba"
   }
 ];
 
