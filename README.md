@@ -1,20 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🚀 Portfolio - React & Vite
 
-# Run and deploy your AI Studio app
+## 🔗 Live Demo
 
-This contains everything you need to run your app locally.
+👉 https://ton-site.netlify.app
 
-View your app in AI Studio: https://ai.studio/apps/55f0a81a-f3ac-4d28-8264-03eaa5c0d844
+## 📸 Preview
 
-## Run Locally
+![Preview](./preview.PNG)
 
-**Prerequisites:**  Node.js
+## 🧠 About
 
+Modern portfolio built with React and Vite.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ⚙️ Tech Stack
+
+* React
+* Vite
+* JavaScript
+* CSS / Tailwind
+
+## 🚀 Features
+
+* Responsive design 📱
+* Smooth animations ✨
+* Projects showcase
+* Contact section
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/ton-username/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+## 📬 Contact
+
+* Email: [tonemail@gmail.com](mailto:alaeddineboubaker@gmail.com)
+* GitHub: https://github.com/aladinbk
