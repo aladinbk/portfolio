@@ -771,7 +771,7 @@ export default function App() {
             </div>
             <div className="flex flex-col">
               <span className="font-display font-bold text-lg tracking-tight">ALAEDDINE</span>
-              <span className="text-[8px] font-black uppercase tracking-[0.3em] text-slate-600">Digital Artisan</span>
+              <span className="text-[8px] font-black uppercase tracking-[0.3em] text-slate-600">FREELANCE DEV</span>
             </div>
           </div>
 
