@@ -427,11 +427,11 @@ export default function App() {
       </section>
 
       {/* Bento Section: About & Stats */}
-      <section id="about" className="py-32 px-6">
+      <section id="about" className="py-20 md:py-32 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="bento-grid grid-cols-1 md:grid-cols-4 lg:grid-rows-2">
             {/* Main About Card */}
-            <BentoCard className="md:col-span-2 lg:row-span-2 rounded-[3rem] p-12 flex flex-col justify-between">
+            <BentoCard className="md:col-span-2 lg:row-span-2 rounded-[3rem] p-8 md:p-12 flex flex-col justify-between">
               <div className="space-y-8">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-sky-500/10 rounded-lg flex items-center justify-center text-sky-400">
@@ -464,7 +464,7 @@ export default function App() {
             </BentoCard>
 
             {/* Clock Card */}
-            <BentoCard className="rounded-[3rem] p-10 flex flex-col justify-center items-center text-center space-y-4">
+            <BentoCard className="rounded-[3rem] p-8 md:p-10 flex flex-col justify-center items-center text-center space-y-4">
               <Clock className="w-6 h-6 text-sky-500 opacity-50" />
               <div className="space-y-1">
                 <p className="font-display text-4xl font-black italic">
@@ -475,7 +475,7 @@ export default function App() {
             </BentoCard>
 
             {/* Stats Card */}
-            <BentoCard className="rounded-[3rem] p-10 flex flex-col justify-center items-center text-center space-y-2">
+            <BentoCard className="rounded-[3rem] p-8 md:p-10 flex flex-col justify-center items-center text-center space-y-2">
               <p className="font-display text-6xl font-black italic">5+</p>
               <p className="text-[9px] font-black uppercase tracking-[0.3em] text-slate-500">Projects</p>
             </BentoCard>
@@ -503,10 +503,10 @@ export default function App() {
       </section>
 
       {/* Capabilities Section: 3D Tilt Cards */}
-      <section className="py-20 px-6">
+      <section className="py-10 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <TiltBentoCard className="p-10 space-y-8">
+            <TiltBentoCard className="p-8 md:p-10 space-y-8">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-400">
                   <Code2 className="w-6 h-6" />
@@ -529,7 +529,7 @@ export default function App() {
               </ul>
             </TiltBentoCard>
 
-            <TiltBentoCard className="p-10 space-y-8">
+            <TiltBentoCard className="p-8 md:p-10 space-y-8">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-emerald-400">
                   <Rocket className="w-6 h-6" />
@@ -551,7 +551,7 @@ export default function App() {
               </ul>
             </TiltBentoCard>
 
-            <TiltBentoCard className="p-10 space-y-8">
+            <TiltBentoCard className="p-8 md:p-10 space-y-8">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-violet-500/10 rounded-2xl flex items-center justify-center text-violet-400">
                   <BrainCircuit className="w-6 h-6" />
