@@ -272,7 +272,7 @@ const PROJECTS: Project[] = [
     tags: ["React", "Vite", "Tailwind CSS", "WhatsApp API"],
     image: "/screenshots/salonify.PNG",
     demo: "https://salonify-manouba.netlify.app/",
-    github: "https://github.com/aladinbk/salonify-manouba"
+    github: "https://github.com/aladinbk/salonify"
   }
 ];
 
