@@ -742,7 +742,7 @@ export default function App() {
             
             <div className="flex flex-wrap justify-center gap-6 md:gap-10">
               {[
-                { Icon: Linkedin, href: "www.linkedin.com/in/alaeddineboubaker", label: "LinkedIn" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/in/alaeddineboubaker", label: "LinkedIn" },
                 { Icon: Github, href: "https://github.com/aladinbk", label: "GitHub" },
                 { Icon: MessageCircle, href: "https://wa.me/21658612156", label: "WhatsApp", color: "hover:text-emerald-400" },
                 { Icon: Mail, href: "mailto:alaeddineboubaker@gmail.com", label: "Email" }
